@@ -74,7 +74,7 @@ class handler(BaseHTTPRequestHandler):
             self.send_response(400)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            msg = "error:\nenter the path as following:\nhttp://localhost:3001/api/questions?category=category_id\nhttp://localhost:3001/api/questions?amount=number_of_questions"
+            msg = "error:\nenter the path as following:\nhttps://questions-competition-git-serverless-lab-anasknbars-projects.vercel.app/api/questions?amount=3 or\nhttps://questions-competition-git-serverless-lab-anasknbars-projects.vercel.app/api/questions?category=21"
             self.wfile.write(msg.encode())
             return
       
